@@ -6,8 +6,7 @@
     <title>Document</title>
     <style>
         header {
-        background-color: #333;
-        color: #fff;
+        background-color: lightgray;
         text-align: center;
         padding: 20px;
         }
@@ -31,17 +30,23 @@
             </ul>
         </nav>
     </main>
-    <form action="kontaktverarbeitung.php" method="POST">
+    <form id="kontaktinfo">
         <label for="kontaktnamen">Kontaktname:</label><br>
         <input type="text" id="kontaktnamen" name="kontaktnamen" required>
         <br>
         <br>
         <label for="nachricht">Bestellung:</label>
         <br>
-        <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
+        <textarea id="bestellung" name="nachricht" rows="4" required></textarea>
         <br>
-        <input type="submit" value="Nachricht senden">
+        <button onclick="btnAbsenden()"></button>
     </form>
+    <script>
+        function kontakt(){
+            
+        }
+    </script>
+    <div id="ausgabe"></div>
 </body>
 </html>
 
